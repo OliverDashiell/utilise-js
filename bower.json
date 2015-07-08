@@ -1,0 +1,38 @@
+{
+  "name": "utilise-js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/OliverDashiell/utilise-js",
+  "authors": [
+    "Oliver Dashiell Bunyan <dashb@me.com>",
+    "James Stidard <jamesstidard@gmail.com>"
+  ],
+  "description": "A utility library for various other javascript libraries",
+  "main": "src/main.js",
+  "keywords": [
+    "knockout",
+    "skeleton",
+    "websockets",
+    "REST",
+    "datatables",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "augment.js": "~1.0.0",
+    "datatables": "~1.10.7",
+    "datatables-tabletools": "~2.2.4",
+    "knockout": "~3.3.0",
+    "requirejs": "~2.1.17",
+    "requirejs-text": "~2.0.14",
+    "notifyjs": "~0.3.2",
+    "fontawesome": "~4.3.0",
+    "skeleton": "~2.0.4"
+  }
+}

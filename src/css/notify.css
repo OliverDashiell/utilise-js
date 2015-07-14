@@ -1,0 +1,42 @@
+/* ---- Notify Styles ---- */
+
+.notifyjs-error-base, .notifyjs-success-base,
+.notifyjs-warning-base, .notifyjs-info-base, .notifyjs-debug-base {
+	position: relative;
+    min-height: 52px;
+    color: white;
+}
+
+.notifyjs-container .icon-wrapper {
+    display: table;
+    position: absolute;
+    height: auto;
+    width: auto;
+    left: 25px;
+    top: 50%;
+
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.notifyjs-container .text-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 10px 10px 10px 52px;
+    clear: both;
+}
+
+.notifyjs-container .title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.notifyjs-container .text {
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+}

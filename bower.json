@@ -1,6 +1,6 @@
 {
   "name": "utilise-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/OliverDashiell/utilise-js",
   "authors": [
     "Oliver Dashiell Bunyan <dashb@me.com>",
@@ -28,6 +28,7 @@
     "augment.js": "~1.0.0",
     "datatables": "~1.10.7",
     "datatables-tabletools": "~2.2.4",
+    "datatables-colresize": "~0.0.10",
     "knockout": "~3.3.0",
     "requirejs": "~2.1.17",
     "requirejs-text": "~2.0.14",

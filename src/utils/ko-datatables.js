@@ -1,7 +1,8 @@
 define(["jquery",
         "knockout",
         "datatables",
-        "tabletools"],function(jQuery,ko){
+        "tabletools",
+        "datatable-resize"],function(jQuery,ko){
 
 	ko.bindingHandlers.dataTable = {
         init: function(element, valueAccessor){

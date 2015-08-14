@@ -1,6 +1,6 @@
 {
   "name": "utilise-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/OliverDashiell/utilise-js",
   "authors": [
     "Oliver Dashiell Bunyan <dashb@me.com>",
@@ -33,7 +33,7 @@
     "requirejs": "~2.1.17",
     "requirejs-text": "~2.0.14",
     "notifyjs": "~0.3.2",
-    "fontawesome": "~4.3.0",
+    "fontawesome": "~4.4.0",
     "skeleton": "~2.0.4"
   }
 }

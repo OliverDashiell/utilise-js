@@ -43,13 +43,17 @@ define(
                 }
             }
 
-            // return error result to callback
-            if(response && response.result) {
-                callback(response.result,response.error,response.message);
+            // prepare callback args
+            var result, message, error = null;
+            if(response) {
+                // set arguments
+                if(response.result)  result  = response.result;
+                if(response.message) message = response.message;
+                if(response.error)   error   = response.error;
             }
-            else {
-                callback(null);
-            }
+
+            // execute callback
+            callback(result,message,error);
         }
 
        // ---- DATA CALLS ---- // 

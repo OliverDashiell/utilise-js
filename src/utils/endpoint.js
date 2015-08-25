@@ -45,7 +45,7 @@ define(
 
             // return error result to callback
             if(response && response.result) {
-                callback(response.result);
+                callback(response.result,response.error,response.message);
             }
             else {
                 callback(null);

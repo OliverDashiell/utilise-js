@@ -24,32 +24,32 @@ define(
 
             // decode response
             var response = $.parseJSON(jqXHR.responseText);
+
+            // prepare response params
+            var result, message, error = null;
+            if(response) {
+                // set response params
+                if(response.result)  result  = response.result;
+                if(response.message) message = response.message;
+                if(response.error)   error   = response.error;
+            }
             
             if(!surpress) {
                 // capitalise text status
                 textStatus = textStatus.charAt(0).toUpperCase() + textStatus.slice(1);
             
                 // display server error or default
-                if(response && response.error) {
-                    notify.error(textStatus+": "+response.error);
+                if(!error) {
+                    error = errorThrown;
                 }
-                else {
-                    notify.error(textStatus+": "+errorThrown);
-                }
+
+                // log error
+                console.log(textStatus+": "+error);
 
                 // display warnings
-                if(response && response.message) {
-                    notify.warning("Warning: "+response.message);
+                if(message) {
+                    notify.notify('Error:', message, 'error');
                 }
-            }
-
-            // prepare callback args
-            var result, message, error = null;
-            if(response) {
-                // set arguments
-                if(response.result)  result  = response.result;
-                if(response.message) message = response.message;
-                if(response.error)   error   = response.error;
             }
 
             // execute callback

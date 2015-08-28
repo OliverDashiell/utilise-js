@@ -31,21 +31,21 @@ define(["jquery",
                     "aButtons": [
                         {
                             "sExtends": "copy",
-                            "sButtonText": 'Copy <i class="fa fa-clipboard fa-fw"></i>'
+                            "sButtonText": '<i class="fa fa-clipboard fa-fw"></i> Copy'
                         },
                         {
                             "sExtends": "csv",
-                            "sButtonText": 'CSV <i class="fa fa-file-text-o fa-fw"></i>',
+                            "sButtonText": '<i class="fa fa-file-text-o fa-fw"></i> CSV',
                             "sFileName": "CasaConnect - *.csv"
                         },
                         {
                             "sExtends": "xls",
-                            "sButtonText": 'Excel <i class="fa fa-file-excel-o fa-fw"></i>',
+                            "sButtonText": '<i class="fa fa-file-excel-o fa-fw"></i> Excel',
                             "sFileName": "CasaConnect - *.xls"
                         },
                         {
                             "sExtends": "pdf",
-                            "sButtonText": 'PDF <i class="fa fa-file-pdf-o fa-fw"></i>',
+                            "sButtonText": '<i class="fa fa-file-pdf-o fa-fw"></i> PDF',
                             "sPdfOrientation": "landscape",
                             "sFileName": "CasaConnect - *.pdf",
                             "sTitle": "CasaConnect: Export",
